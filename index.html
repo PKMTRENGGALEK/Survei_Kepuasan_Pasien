@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Survei Kepuasan Pasien</title>
+  </head>
+  <body>
+    <div class="container mt-4 text-center">
+      <img src="pkmlogo.png" alt="" width="300px" />
+    </div>
+    <div class="container mt-4">
+      <div class="text-center">
+        <h2>BAGAIMANA PELAYANAN KAMI</h2>
+        <p>
+          Dengan Mengisi survei berikut, anda telah membantu kami untuk
+          berkembang
+        </p>
+      </div>
+    </div>
+    <form action="" name="submit">
+      <div class="container mt-4 text-center">
+        <div class="row justify-content-md-center">
+          <label>
+            <h5 class="text-danger text-center">PILIH POLI PELAYANAN</h5></label
+          >
+          <div class="col-md-6">
+            <select name="" class="form-select text-center">
+              <option value="">--Pilih Poli--</option>
+              <option value="Poli Umum">Poli Umum</option>
+              <option value="Poli Gigi">Poli Gigi</option>
+              <option value="Poli Gizi">Poli Gizi</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4 text-center" id="like">
+        <div class="row">
+          <div class="col">
+            <button class="btn" name="ok" type="submit">
+              <div class="card shadow">
+                <div class="card-body text-center">
+                  <span style="font-size: 210px">&#128522;</span>
+                  <p class="fw-bold">PUAS</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button class="btn" name="no" type="submit">
+              <div class="card shadow">
+                <div class="card-body text-center">
+                  <span style="font-size: 210px">&#128545;</span>
+                  <p class="fw-bold">TIDAK PUAS</p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- <?php 
+      if (isset($_POST['ok'])){
+        echo "<script>
+                Swal.fire({
+                  position: 'center',
+                  icon: 'success',
+                  title: 'Your work has been saved',
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+              </script>";
+      }
+    ?> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<script>
+  // $("#basic-usage").select2({
+  //   theme: "bootstrap-5",
+  //   width: $(this).data("width")
+  //     ? $(this).data("width")
+  //     : $(this).hasClass("w-100")
+  //     ? "100%"
+  //     : "style",
+  //   placeholder: $(this).data("placeholder"),
+  // });
+</script>
+<script>
+  const form = document.forms["submit"];
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your work has been saved",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  });
+</script>

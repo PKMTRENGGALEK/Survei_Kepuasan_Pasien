@@ -35,3 +35,26 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+$("#basic-usage").select2({
+  theme: "bootstrap-5",
+  width: $(this).data("width")
+    ? $(this).data("width")
+    : $(this).hasClass("w-100")
+    ? "100%"
+    : "style",
+  placeholder: $(this).data("placeholder"),
+});
+
+window.setTimeout("waktu()", 1000);
+
+function waktu() {
+  var waktu = new Date();
+  setTimeout("waktu()", 1000);
+  document.getElementById("jam").innerHTML = waktu.getHours();
+  document.getElementById("menit").innerHTML = waktu.getMinutes();
+  document.getElementById("detik").innerHTML = waktu.getSeconds();
+}
+var date = new Date();
+var current_date =
+  date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+document.getElementById("p1").innerHTML = current_date;

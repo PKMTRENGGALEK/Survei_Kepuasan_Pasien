@@ -51,6 +51,7 @@
         <a id="detik"></a>
       </div>
     </div>
+
     <form name="simpan" class="mb-2">
       <div class="container mt-4 text-center">
         <div class="row justify-content-md-center">
@@ -70,7 +71,7 @@
               </div>
             </div>
           </div>
-          
+
           <label>
             <h5 class="text-danger text-center">PILIH POLI PELAYANAN</h5></label
           >
@@ -87,17 +88,23 @@
               <option value="Poli Gizi">Poli Gizi</option>
             </select>
           </div>
+          <label class="pt-2"
+            ><h5 class="text-danger">NAMA PENGUNJUNG</h5>
+          </label>
+          <div class="col-md-6">
+            <input type="text" class="form-control" />
+          </div>
         </div>
       </div>
-      <br><br><br>
-      <div class="container mt-4 text-center" id="like">
-        <div class="row">
-          <div class="col">
+      <br /><br /><br />
+      <div class="container mt-4" id="like">
+        <div class="row justify-content-center">
+          <div class="col-md-2">
             <div class="card shadow mb-4">
               <div class="card-body text-center bg-success">
                 <button class="p-3 btn btn-sp" type="submit">
-                  <span style="font-size: 120px">&#128522;</span>
-                  <p class="fw-bold">SANGAT PUAS</p>
+                  <span style="font-size: 70px">&#128522;</span>
+                  <p class="fw-bold">PUAS</p>
                   <input
                     type="hidden"
                     class="fm1"
@@ -108,13 +115,13 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-2">
             <div class="card shadow mb-4">
               <div class="card-body text-center bg-warning">
                 <button class="p-3 btn btn-s" type="submit">
-                  <span style="font-size: 120px">&#128578;</span>
+                  <span style="font-size: 70px">&#128578;</span>
                   <!-- <i class="fas fa-heart"></i> -->
-                  <p class="fw-bold">PUAS</p>
+                  <p class="fw-bold">KURANG PUAS</p>
                   <input
                     type="hidden"
                     class="fm2"
@@ -125,11 +132,11 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-2">
             <div class="card shadow mb-4">
               <div class="card-body text-center bg-danger">
                 <button class="p-3 btn btn-t" type="submit">
-                  <span style="font-size: 120px">&#128545;</span>
+                  <span style="font-size: 70px">&#128545;</span>
                   <p class="fw-bold" name="tidakpuas">TIDAK PUAS</p>
                   <input type="hidden" name="tidakpuas" class="fm3" />
                 </button>

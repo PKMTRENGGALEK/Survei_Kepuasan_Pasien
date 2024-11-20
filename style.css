@@ -98,3 +98,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
+.card {
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.12);
+}
